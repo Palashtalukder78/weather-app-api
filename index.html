@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <!-- Search bar  -->
+        <div class="row">
+            <div class="col-md-7 mx-auto">
+                <div class="input-group mb-3">
+                    <input id="input-field" type="text" class="form-control" placeholder="Enter a City"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button onclick="cityName()" class="btn btn-outline-light bg-success" type="button"
+                        id="search-button">Button</button>
+                </div>
+            </div>
+        </div>
+        <!-- Get Data  -->
+        <div id="weather-container" class="row text-light text-center mt-4">
+
+        </div>
+
+        <!-- Spinner  -->
+        <div class="row">
+            <div id="spinner" height="100%" class="col text-center my-auto" style="display: none;">
+                <div class="spinner-grow bg-info" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only"></span>
+                </div>
+            </div>
+        </div>
+        <!-- Empty search field Message -->
+        <div id="empty-field-error-message" class="row">
+            <div class="col-7 mx-auto">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
